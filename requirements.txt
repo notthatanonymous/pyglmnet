@@ -1,7 +1,7 @@
 numpy>=1.11,<1.19.2
 #scipy>=0.17,<=1.5.4
 #scikit-learn>=0.18,<0.23.0
-pandas>=0.20,<1.1.2
+#pandas>=0.20,<1.1.2
 #pytest
 #pytest-cov
 #coverage
