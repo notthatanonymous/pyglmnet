@@ -151,7 +151,7 @@ from pyglmnet.datasets import fetch_rgc_spike_trains
 # ``stim_times`` (time of the stimulation), and
 # ``spike_times`` (recorded time of the spikes)
 
-dpath = fetch_rgc_spike_trains()
+dpath = 'examples'
 with open(op.join(dpath, 'data_RGCs.json'), 'r') as f:
     rgcs_dataset = json.loads(f.read())
 
