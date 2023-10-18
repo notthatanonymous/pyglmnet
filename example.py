@@ -268,9 +268,12 @@ ypred_poisson_hist = glm_poisson_hist.predict(Xdsgn_hist)
 
 
 # print scores of all the fitted models
-print('Training perf (R^2): lin-gauss GLM, w/ offset: {:.2f}'
-      .format(glm_lg.score(Xdsgn, y)))
-print('Training perf (R^2): Pyglmnet possion GLM {:.2f}'
-      .format(glm_poisson.score(Xdsgn, y)))
-print('Training perf (R^2): Pyglmnet poisson GLM w/ spikes history {:.2f}'
-      .format(glm_poisson_hist.score(Xdsgn_hist, y)))
+# print('Training perf (R^2): lin-gauss GLM, w/ offset: {:.2f}'
+#       .format(glm_lg.score(Xdsgn, y)))
+# print('Training perf (R^2): Pyglmnet possion GLM {:.2f}'
+#       .format(glm_poisson.score(Xdsgn, y)))
+# print('Training perf (R^2): Pyglmnet poisson GLM w/ spikes history {:.2f}'
+#       .format(glm_poisson_hist.score(Xdsgn_hist, y)))
+
+
+print(f"\n\n\nScore: {glm_poisson_hist.score(Xdsgn_hist, y)}\n\n\n")
